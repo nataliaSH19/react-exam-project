@@ -1,38 +1,52 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700");
+
+body {
+  background: url("../src/images/background-hero.jpeg") no-repeat center center
+    fixed;
+  -webkit-background: cover;
+  -moz-background: cover;
+  -o-background: cover;
+  background: cover;
+  font-family: "Nunito", "Roboto", sans-serif;
+}
+.trip-search-container {
+  width: 100%;
+  height: 100vh;
+}
+.header-title {
+  margin-top: -8vh;
   text-align: center;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.header-title h1 {
+  font-size: 65px;
+  font-weight: 800;
+  color: #090a36;
+}
+.custom-button {
+  background-image: linear-gradient(
+    to right,
+    #f51414 0%,
+    #f03252 51%,
+    #f8b05e 100%
+  );
+  border: none !important;
+  box-shadow: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.travel-bg {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  width: 100%;
+  height: 100%;
+  background: url("lachlan-cruickshank-69YkgqBwAHI-unsplash.jpg");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.arrow-pill {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
 }
